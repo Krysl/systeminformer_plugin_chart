@@ -1,12 +1,14 @@
 # TreeMap Plugin for [SystemInformer](https://github.com/winsiderss/systeminformer)
 
+![Screenshot](https://github.com/user-attachments/assets/4b383a7f-aa3b-4204-824a-55a0e26a86af)
+
 This repo is used to ~~help explain for~~ ***Solve*** the "[[Feature request] TreeMap View for Memory Usage](https://github.com/processhacker/processhacker/issues/1008)"
 
 > An [early version](https://github.com/krysl/ProcessHacker_TreeMap) of the [web page implementation](https://krysl.github.io/ProcessHacker_TreeMap/) from 3 years ago, implemented using d3.js
-> (The web version requires manually saving the process tree information of SystemInformer (a csv file) and then uploading it to the web page for calculation. It is very troublesome to use.)
+> (The web version requires users to manually save the process tree information from SystemInformer as a `.csv` file and upload it to the web page for calculation and display, which is inconvenient to use.)
 
 ## Install
-1. Download zip file (Coming soon).
+1. Download `plugins.zip` from [latest releases](https://github.com/Krysl/systeminformer_plugin_chart/releases/)
 2. Unzip the files to the folder where systeminformer.exe is located.
 3. Launch SystemInformer, set `EnableDefaultSafePlugins` in "Options"->"Advanced" to `0`
 4. Restart SystemInformer
