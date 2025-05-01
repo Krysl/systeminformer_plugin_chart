@@ -1,0 +1,48 @@
+name: "SystemInformerAPI"
+description: 'Gen code for SystemInformer'
+output: "lib/src/system_informer/generated_bindings.dart"
+llvm-path:
+  - "D:/Program Files/LLVM/"
+headers:
+  entry-points:
+    - "sdk/include/phdk.h"
+  include-directives:
+    - "sdk/include/**"
+    - "**assets/**"
+    # ADD ALL HEADER FILE NEEDED HERE (phdk.h no need)
+    - "**stat.h"
+    - "**phconfig.h"
+compiler-opts:
+  - "-isystem sdk/include/"
+  - "-D NO_BITFIELD"
+ignore-source-errors: true
+preamble: "// ignore_for_file: unused_element, unused_field"
+comments:
+  style: any
+  length: full
+structs:
+  rename:
+    "_PH_PROCESS_ITEM": "PH_PROCESS_ITEM"
+    "_(.*)": "$1"
+unions:
+  rename:
+    "_(.*)": "$1"
+enums:
+  rename:
+    "_VERIFY_RESULT": "VERIFYRESULT"
+    "_(.*)": "$1"
+macros:
+  rename:
+    "_(.*)": "$1"
+functions:
+  exclude:
+    - '.*'
+
+type-map:
+  'typedefs':
+    'VERIFY_RESULT':
+      'lib': 'data_type'
+      'c-type': 'VERIFY_RESULT'
+      'dart-type': 'VERIFY_RESULT'
+library-imports:
+  data_type: 'data_type.dart'

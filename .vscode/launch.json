@@ -1,0 +1,36 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(Windows) Launch SystemInformer.exe",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${env:SYSTEMINFORMER_GIT_FOLDER}/bin/Debug64/SystemInformer.exe",
+      "symbolOptions": {
+        "searchPaths": [],
+        "searchMicrosoftSymbolServer": true, // download from server, so slow when first debug
+      },
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "console": "newExternalWindow"
+    },
+    {
+      "name": "Flutter: Attach to Device", // Debug Flutter After "Launch SystemInformer.exe and open the chart"
+      "type": "dart",
+      "request": "attach",
+      "vmServiceUri": "http://127.0.0.1:11327/AcNQSWDyl7s=/", // no-commit
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "name": "(Windows) Attach",
+      "type": "cppvsdbg",
+      "request": "attach",
+      "processId": "${command:pickProcess}",
+    }
+  ]
+}
