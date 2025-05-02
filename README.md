@@ -9,16 +9,55 @@ This repo is used to ~~help explain for~~ ***Solve*** the "[[Feature request] Tr
 
 ## Install
 1. Download `plugins.zip` from [latest releases](https://github.com/Krysl/systeminformer_plugin_chart/releases/)
+
 The plugin' version MUST match the SystemInformer' version (https://github.com/Krysl/systeminformer_plugin_chart/issues/3)
 
 | Plugin version                                                                                      | SystemInformer version                                                                                                                                                                                                                                  |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [v1.0.0](https://github.com/Krysl/systeminformer_plugin_chart/releases/download/v1.0.0/plugins.zip) | ~~https://github.com/winsiderss/si-builds/releases/tag/3.2.25115.223~~  (not work)<br> https://github.com/winsiderss/si-builds/releases/tag/3.2.25116.2104 (Works) <br> ~https://github.com/winsiderss/si-builds/releases/tag/3.2.25121.437~ (Not work) |
 
-2. Unzip the files to the folder where systeminformer.exe is located.
-3. Launch SystemInformer, set `EnableDefaultSafePlugins` in "Options"->"Advanced" to `0`
-4. Restart SystemInformer
-5. Click `View`->`chart` in the menu bar to launch the TreeMap view
+2. Unzip the files to the plugins folder
+```
+│  SystemInformer.exe
+│  ...
+│
+├─plugins
+│  │  flutter_windows.dll
+│  │  native_assets.yaml
+│  │  systeminformer_plugin_chart.dll
+│  │  ...
+│  │
+│  └─data
+│      │  app.so
+│      │  icudtl.dat
+│      │
+│      └─flutter_assets
+│          │  AssetManifest.bin
+│          │  AssetManifest.json
+│          │  FontManifest.json
+│          │  NativeAssetsManifest.json
+│          │  NOTICES.Z
+│          │
+│          ├─fonts
+│          │      MaterialIcons-Regular.otf
+│          │
+│          ├─packages
+│          │  └─cupertino_icons
+│          │      └─assets
+│          │              CupertinoIcons.ttf
+│          │
+│          └─shaders
+│                  ink_sparkle.frag
+│
+├─Resources
+...
+```
+1. Launch SystemInformer, set `EnableDefaultSafePlugins` in "Options"->"Advanced" to `0`
+   1. (if there is no "Advanced" tab:)
+     -  in Tab "General"：
+        - Check the last checkbox "Show advanced options"
+2. Restart SystemInformer
+3. Click `View`->`chart` in the menu bar to launch the TreeMap view
 
 
 ## TODOs (WIP)
