@@ -9,6 +9,12 @@ This repo is used to ~~help explain for~~ ***Solve*** the "[[Feature request] Tr
 
 ## Install
 1. Download `plugins.zip` from [latest releases](https://github.com/Krysl/systeminformer_plugin_chart/releases/)
+The plugin' version MUST match the SystemInformer' version (https://github.com/Krysl/systeminformer_plugin_chart/issues/3)
+
+| Plugin version                                                                                      | SystemInformer version                                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [v1.0.0](https://github.com/Krysl/systeminformer_plugin_chart/releases/download/v1.0.0/plugins.zip) | ~~https://github.com/winsiderss/si-builds/releases/tag/3.2.25115.223~~  (not work)<br> https://github.com/winsiderss/si-builds/releases/tag/3.2.25116.2104 (Works) <br> ~https://github.com/winsiderss/si-builds/releases/tag/3.2.25121.437~ (Not work) |
+
 2. Unzip the files to the folder where systeminformer.exe is located.
 3. Launch SystemInformer, set `EnableDefaultSafePlugins` in "Options"->"Advanced" to `0`
 4. Restart SystemInformer
